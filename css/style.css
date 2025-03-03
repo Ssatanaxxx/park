@@ -1,0 +1,462 @@
+
+        /* Стили для блока "Купить билет" */
+        .buy-ticket {
+            background-color: #fff;
+            padding: 60px 0;
+        }
+
+        .buy-ticket-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .buy-ticket-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .buy-ticket-form input,
+        .buy-ticket-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .buy-ticket-form button {
+            background-color: #e67e22;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .buy-ticket-form button:hover {
+            background-color: #d35400;
+            transform: scale(1.05);
+        }
+
+        .ticket-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #2c3e50;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            transition: background-color 0.3s ease, padding 0.3s ease;
+        }
+
+        .header.scrolled {
+            background-color: #1a252f;
+            padding: 5px 10px;
+        }
+
+        .header-logo {
+            height: 50px;
+            transition: height 0.3s ease;
+            margin: 0;
+            margin-left: 25px;
+        }
+
+        .header-list {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header-list-item-link-contact {
+            color: #ecf0f1;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .header-list-item-link-contact:hover {
+            color: #e67e22;
+        }
+
+        .header-button {
+            background-color: #e67e22;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin: 0;
+            margin-right: 40px;
+        }
+
+        .header-button:hover {
+            background-color: #d35400;
+            transform: scale(1.05);
+        }
+
+        .section-descr {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 20px;
+            text-align: center;
+        }
+        /* Кнопка корзины */
+        .cart-button {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            z-index: 1000;
+            margin: 0;
+            margin-top: 20px;
+        }
+
+        .cart-button:hover {
+            background-color: #2980b9;
+            transform: scale(1.05);
+        }
+
+        .cart-button.scrolled {
+            top:  125px;;
+        }
+
+        .section-offset {
+            padding: 60px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #2c3e50;
+        }
+
+        .hero-list {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .attraction {
+            background-color: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 0 auto 20px;
+        }
+
+        .attraction:last-child {
+            margin-bottom: 0;
+        }
+
+        .attraction:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .attraction img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .attraction-text {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .characters-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 40px 0;
+        }
+
+        .character-block {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .character-block:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Стили для блока "Хижина чудес" */
+        .mystical-creatures {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .mystical-header {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #e67e22;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .mystical-creatures p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            animation: fadeIn 2.5s ease-in-out;
+        }
+
+        .character-name {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            color: #e67e22;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        .character-description {
+            font-size: 1rem;
+            margin-top: 10px;
+            animation: fadeIn 3.5s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Стили для блока "Контакты" */
+        .contacts {
+            background-color: #ecf0f1;
+            padding: 60px 0;
+        }
+
+        .contacts .section-title {
+            color: #2c3e50;
+        }
+
+        .contacts p {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .contacts a {
+            color: #e67e22;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .contacts a:hover {
+            color: #d35400;
+        }
+
+        /* Стили для блока "Наши услуги" */
+        .services {
+            background-color: #ecf0f1;
+            padding: 60px 0;
+        }
+
+        .services-line {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .services-line-text {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .services-line-text:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .services-line-title {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .services-text-title {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .services-line-text:nth-child(1) {
+            background-color: #e67e22;
+            color: #fff;
+        }
+
+        .services-line-text:nth-child(1) .services-line-title,
+        .services-line-text:nth-child(1) .services-text-title {
+            color: #fff;
+        }
+
+        .services-line-text:nth-child(2) {
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .services-line-text:nth-child(2) .services-line-title,
+        .services-line-text:nth-child(2) .services-text-title {
+            color: #fff;
+        }
+
+        .services-line-text:nth-child(3) {
+            background-color: #2ecc71;
+            color: #fff;
+        }
+
+        .services-line-text:nth-child(3) .services-line-title,
+        .services-line-text:nth-child(3) .services-text-title {
+            color: #fff;
+        }
+
+        /* Стили для блока "Купить билет" */
+        .buy-ticket {
+            background-color: #fff;
+            padding: 60px 0;
+        }
+
+        .buy-ticket-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .buy-ticket-form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        .buy-ticket-form input,
+        .buy-ticket-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .buy-ticket-form button {
+            background-color: #e67e22;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .buy-ticket-form button:hover {
+            background-color: #d35400;
+            transform: scale(1.05);
+        }
+
+        .ticket-price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-top: 20px;
+        }
+
+        /* Стили для модального окна */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1001;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 500px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+
+        .footer__text {
+            text-align: center;
+        }
